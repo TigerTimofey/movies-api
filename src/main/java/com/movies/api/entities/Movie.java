@@ -1,8 +1,15 @@
 package com.movies.api.entities;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDate;
 
+@Getter
+@Setter
 public class Movie {
+    // Getter for id (no setter)
     private final Long id;
+    // Getters and Setters
     private String title;
     private Integer releaseYear;
     private Integer duration;
@@ -14,37 +21,6 @@ public class Movie {
         this.releaseYear = releaseYear;
         this.duration = duration;
     }
-
-    // Getter for id (no setter)
-    public Long getId() {
-        return id;
-    }
-
-    // Getters and Setters
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Integer getReleaseYear() {
-        return releaseYear;
-    }
-
-    public void setReleaseYear(Integer releaseYear) {
-        this.releaseYear = releaseYear;
-    }
-
-    public Integer getDuration() {
-        return duration;
-    }
-
-    public void setDuration(Integer duration) {
-        this.duration = duration;
-    }
-
     // To String
     @Override
     public String toString() {
