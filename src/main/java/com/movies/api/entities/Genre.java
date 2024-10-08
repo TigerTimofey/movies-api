@@ -1,27 +1,17 @@
 package com.movies.api.entities;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Genre {
-    private final
-    Long id;
+    private final Long id;
     private String name;
 
     // Constructor
     public Genre(Long id, String name) {
         this.id = id;
-        this.name = name;
-    }
-
-    // Getter for id (no setter)
-    public Long getId() {
-        return id;
-    }
-
-    // Getters and Setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
     }
 

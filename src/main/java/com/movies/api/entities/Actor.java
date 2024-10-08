@@ -1,6 +1,12 @@
 package com.movies.api.entities;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.Instant;
+
+@Getter
+@Setter
 
 public class Actor {
 
@@ -15,30 +21,7 @@ public class Actor {
         this.birthDate = birthDate;
     }
 
-    // Getter for id (no setter)
-    public Long getId() {
-        return id;
-    }
-
-    // Getters and setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Instant getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Instant birthDate) {
-        this.birthDate = birthDate;
-    }
-
     // to String
-
     @Override
     public String toString() {
         return "Actor{" +
